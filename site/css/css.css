@@ -1,0 +1,10 @@
+.grid {
+    width: 360px;
+    height: 598px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hotpink;
+}

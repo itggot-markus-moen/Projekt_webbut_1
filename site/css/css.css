@@ -28,13 +28,17 @@ header h1 {
 header button {
     grid-column: span 1;
     grid-row: span 2;
-    color: yellow;
     background-color: yellow;
     border-radius: 15px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(184, 184, 0);
 }
 
 nav {
@@ -50,9 +54,15 @@ nav button {
     grid-column: span 1;
     grid-row: span 1;
     background-color: red;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.location {
+    grid-column: span 4;
+    grid-row: span 1;
+    margin-left: 10px;
 }

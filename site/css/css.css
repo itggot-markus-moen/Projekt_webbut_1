@@ -14,7 +14,7 @@ header {
     grid-row: span 2;
     display: grid;
     grid-template-columns: inherit;
-    grid-template-rows: 2;
+    grid-template-rows: repeat(2, 1fr);
     background-color: blue;
 }
 
@@ -22,6 +22,7 @@ header h1 {
     color: yellow;
     grid-column: span 2;
     grid-row: span 2;
+    font-size: 35px;
 }
 
 header button {
@@ -33,10 +34,25 @@ header button {
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 nav {
     grid-column: span 4;
     grid-row: span 1;
     background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+nav button {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: red;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }

@@ -109,6 +109,15 @@ main {
     grid-column: span 4;
     grid-row: span 6;
     background-color: #282828;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+main img {
+    width: 60vw;
+    height: 20vh;
+    grid-column: 2/4;
 }
 
 footer {

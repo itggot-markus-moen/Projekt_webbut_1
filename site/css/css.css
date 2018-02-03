@@ -1,9 +1,9 @@
 .grid {
     width: 360px;
-    height: 598px;
+    /*height: 598px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(13, 54px);
     margin-left: auto;
     margin-right: auto;
     background-color: #282828;
@@ -107,17 +107,25 @@ nav button {
 
 main {
     grid-column: span 4;
-    grid-row: span 6;
+    grid-row: span 8;
     background-color: #282828;
     display: grid;
-    grid-template-columns: inherit;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
-main img {
-    width: 60vw;
-    height: 20vh;
-    grid-column: 2/4;
+main > img {
+    width: 67vw;
+    height: 28vh;
+    grid-column: 2/6;
+    grid-row: 2/8;
+}
+
+main img:nth-child(2) {
+    width: 67vw;
+    height: 28vh;
+    grid-column: 2/6;
+    grid-row: 9/15;
 }
 
 footer {

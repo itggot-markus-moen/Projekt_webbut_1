@@ -14,7 +14,7 @@ header {
     grid-row: span 2;
     display: grid;
     grid-template-columns: inherit;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     background-color: #080808;
     border-style: solid;
     border-top-color: #e57200;
@@ -25,14 +25,14 @@ header {
 
 header img {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
     margin-left: 5px;
 }
 
 header h1 {
     color: #e57200;
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
     font-size: 30px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -40,7 +40,7 @@ header h1 {
 
 header button {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
     background-color: #e57200;
     border-radius: 9001px;
     margin-right: 5px;
@@ -56,9 +56,39 @@ header button {
 
 a {
     text-decoration: none;
-    color: #080808;
+    color: #00c3ff;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+header a {
+    color: #00c3ff;
+    align-self: center;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #e57200;
+    border-radius: 9001px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-style: solid;
+    border-top-color: #00c3ff;
+    border-left-color: #00c3ff;
+    border-right-color: #00c3ff;
+    border-bottom-color: #00c3ff;
+}
+
+header a:active {
+    color: #e57200;
+    background-color: #00c3ff;
+    border-top-color: #e57200;
+    border-left-color: #e57200;
+    border-right-color: #e57200;
+    border-bottom-color: #e57200;
 }
 
 nav {
@@ -88,7 +118,7 @@ nav button {
     grid-column: span 4;
     grid-row: span 1;
     display: grid;
-    grid-template-columns: inherit;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
     border-style: solid;
     border-top-color: #e57200;
@@ -102,7 +132,7 @@ nav button {
     grid-column: span 1;
     grid-row: span 1;
     text-align: center;
-    margin-top: 10px;
+    align-self: center;
 }
 
 main {

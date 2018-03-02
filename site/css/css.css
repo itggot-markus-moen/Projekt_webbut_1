@@ -1,9 +1,9 @@
 .grid {
     width: 360px;
-    /*height: 598px;*/
+    height: 598px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(13, 54px);
+    grid-template-rows: repeat(11, 1fr/*54px*/);
     margin-left: auto;
     margin-right: auto;
     background-color: #282828;
@@ -38,7 +38,27 @@ header h1 {
     text-align: center;
 }
 
-header button {
+button {
+    color: #00c3ff;
+    align-self: center;
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #e57200;
+    border-radius: 9001px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-top-color: #00c3ff;
+    border-left-color: #00c3ff;
+    border-right-color: #00c3ff;
+    border-bottom-color: #00c3ff;
+}
+
+/*header button {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #e57200;
@@ -52,16 +72,18 @@ header button {
     border-left-color: #e57200;
     border-right-color: #e57200;
     border-bottom-color: #e57200;*/
-}
+/*}*/
 
 a {
-    text-decoration: none;
+   /*text-decoration: none;
     color: #00c3ff;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: bold;*/
+    align-self: center;
+    text-align: center;
 }
 
-header a {
+/*header a {
     color: #00c3ff;
     align-self: center;
     -webkit-appearance: button;
@@ -80,16 +102,16 @@ header a {
     border-left-color: #00c3ff;
     border-right-color: #00c3ff;
     border-bottom-color: #00c3ff;
-}
+}*/
 
-header a:active {
+/*header a:active {
     color: #e57200;
     background-color: #00c3ff;
     border-top-color: #e57200;
     border-left-color: #e57200;
     border-right-color: #e57200;
     border-bottom-color: #e57200;
-}
+}*/
 
 nav {
     grid-column: span 4;
@@ -103,7 +125,7 @@ nav {
     border-right-color: #e57200;
 }
 
-nav button {
+/*nav button {
     grid-column: span 1;
     grid-row: span 1;
     background-color: #e57200;
@@ -112,7 +134,7 @@ nav button {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-}
+}*/
 
 .location {
     grid-column: span 4;
@@ -129,6 +151,9 @@ nav button {
 
 .location a {
     color: #e57200;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     grid-column: span 1;
     grid-row: span 1;
     text-align: center;
@@ -137,14 +162,27 @@ nav button {
 
 main {
     grid-column: span 4;
-    grid-row: span 8;
-    background-color: #282828;
+    grid-row: span 6;
+    /*background-color: #282828;*/
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image: url("../img/yeah.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-main > img {
+main h1 {
+    grid-column: span 1;
+    grid-row: 2/4;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #080808;
+    text-align: center;
+    align-self: center;
+}
+
+/*main > img {
     width: 67vw;
     height: 28vh;
     grid-column: 2/6;
@@ -156,7 +194,7 @@ main img:nth-child(2) {
     height: 28vh;
     grid-column: 2/6;
     grid-row: 9/15;
-}
+}*/
 
 footer {
     grid-column: span 4;
@@ -167,4 +205,13 @@ footer {
     border-left-color: #e57200;
     border-right-color: #e57200;
     border-bottom-color: #e57200;
+}
+
+h2 {
+    color: #e57200;
+    /*grid-column: span 2;
+    grid-row: span 1;*/
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
 }

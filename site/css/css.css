@@ -198,6 +198,12 @@ main input:nth-child(2) {
     grid-column: 2/4;
     grid-row: 4/5;
 }
+
+main input:nth-child(3) {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
 main a:first-of-type {
     grid-column: 2/4;
     grid-row: 6/7;
@@ -205,6 +211,10 @@ main a:first-of-type {
 
 main a:nth-of-type(2) {
     grid-column: 2/4;
+    grid-row: 7/8;
+}
+
+main input.reg {
     grid-row: 7/8;
 }
 

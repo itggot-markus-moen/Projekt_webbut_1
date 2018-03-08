@@ -259,6 +259,13 @@ main.wide button {
     grid-row: 8/9;
 }
 
+h4 {
+    color: #e57200;
+    grid-column: 2/4;
+    grid-row: span 1;
+    font-family: 'Roboto Slab', serif;
+}
+
 /*main > img {
     width: 67vw;
     height: 28vh;

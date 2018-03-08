@@ -39,12 +39,12 @@ header h1 {
 }
 
 button {
-    color: #00c3ff;
+    color: /*#00c3ff*/#e57200;
     align-self: center;
     text-align: center;
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #e57200;
+    background-color: /*#e57200*/#080808;
     border-radius: 9001px;
     margin-right: 5px;
     margin-top: 5px;
@@ -52,19 +52,19 @@ button {
     margin-left: 10px;
     font-size: 20px;
     border-style: solid;
-    border-top-color: #00c3ff;
-    border-left-color: #00c3ff;
-    border-right-color: #00c3ff;
-    border-bottom-color: #00c3ff;
+    border-top-color: /*#00c3ff*/#e57200;
+    border-left-color: /*#00c3ff*/#e57200;
+    border-right-color: /*#00c3ff*/#e57200;
+    border-bottom-color: /*#00c3ff*/#e57200;
 }
 
 button:active {
-    color: #e57200;
-    background-color: #00c3ff;
-    border-top-color: #e57200;
-    border-left-color: #e57200;
-    border-right-color: #e57200;
-    border-bottom-color: #e57200;
+    color: /*#e57200*/#080808;
+    background-color: /*#00c3ff*/#e57200;
+    border-top-color: /*#e57200*/#080808;
+    border-left-color: /*#e57200*/#080808;
+    border-right-color: /*#e57200*/#080808;
+    border-bottom-color: /*#e57200*/#080808;
 }
 
 /*header button {
@@ -226,6 +226,37 @@ main a:nth-of-type(2) {
 main a.reg {
     grid-column: 2/4;
     grid-row: 7/8;
+}
+
+.wide {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+p {
+    grid-column: 2/8;
+    grid-row: 1/9;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main.wide img {
+    grid-column: 2/8;
+    grid-row: 2/8;
+    width: 270px;
+}
+
+h3 {
+    color: #e57200;
+    grid-column: 2/6;
+    grid-row: 8/9;
+    /*font-size: 15px;*/
+    font-family: 'Roboto Slab', serif;
+    /*text-align: center;*/
+}
+
+main.wide button {
+    grid-column: 6/8;
+    grid-row: 8/9;
 }
 
 /*main > img {

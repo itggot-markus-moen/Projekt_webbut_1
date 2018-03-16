@@ -1,0 +1,33 @@
+button {
+    color: #e57200;
+    align-self: center;
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #080808;
+    border-radius: 9001px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-style: solid;
+    border-top-color: #e57200;
+    border-left-color: #e57200;
+    border-right-color: #e57200;
+    border-bottom-color: #e57200;
+}
+
+button:active {
+    color: #080808;
+    background-color: #e57200;
+    border-top-color: #080808;
+    border-left-color: #080808;
+    border-right-color: #080808;
+    border-bottom-color: #080808;
+}
+
+a {
+    align-self: center;
+    text-align: center;
+}

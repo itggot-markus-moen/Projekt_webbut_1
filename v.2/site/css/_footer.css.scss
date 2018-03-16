@@ -1,0 +1,17 @@
+footer {
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: #080808;
+    border-style: solid;
+    border-top-color: #e57200;
+    border-left-color: #e57200;
+    border-right-color: #e57200;
+    border-bottom-color: #e57200;
+}
+
+h2 {
+    color: #e57200;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}

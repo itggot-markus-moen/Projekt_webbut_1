@@ -1,0 +1,28 @@
+header {
+    grid-column: span 4;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #080808;
+    border-style: solid;
+    border-top-color: #e57200;
+    border-left-color: #e57200;
+    border-right-color: #e57200;
+    border-bottom-color: #e57200;
+}
+
+header img {
+    grid-column: span 1;
+    grid-row: span 1;
+    margin-left: 5px;
+}
+
+header h1 {
+    color: #e57200;
+    grid-column: span 2;
+    grid-row: span 1;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}

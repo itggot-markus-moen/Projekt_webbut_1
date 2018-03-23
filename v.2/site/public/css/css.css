@@ -1,4 +1,7 @@
 .grid {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
   width: 360px;
   height: 598px;
   display: grid;
@@ -155,11 +158,6 @@ p {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
-main.wide img {
-  grid-column: 2/8;
-  grid-row: 2/8;
-  width: 270px; }
-
 h3 {
   color: #e57200;
   grid-column: 2/6;
@@ -191,3 +189,11 @@ h2 {
   font-size: 15px;
   font-family: 'Roboto Slab', serif;
   text-align: center; }
+
+.map {
+  height: 260px;
+  width: 340px;
+  margin-left: 10px;
+  grid-column: 1/9;
+  grid-row: 1/8;
+  background-color: #080808; }

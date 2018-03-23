@@ -2,6 +2,24 @@
     <a href="#">Lokaler</a>
 </div>
 <main class="wide">
-    <img src="img/karta.png" alt="">
+    <div id="map" class="map"></div>
+
+    <script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(57.6903788, 11.974533400000041),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(57.6903788, 11.974533400000041),
+        map: map
+    });
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAuNWemv4EO71QsYak3sObKz0f86plVtc&callback=myMap"></script>
+
     <h3>Den bästa lokalen</h3>
     <button>Välj annan</button>

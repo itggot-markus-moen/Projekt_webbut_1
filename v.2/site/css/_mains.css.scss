@@ -4,15 +4,8 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr);
-}
 
-.background {
-    background-image: url("../img/yeah.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-main h1 {
+    h1 {
     grid-column: span 4;
     grid-row: 2/7;
     font-size: 30px;
@@ -20,6 +13,13 @@ main h1 {
     color: #080808;
     text-align: center;
     align-self: center;
+    }
+}
+
+.background {
+    background-image: url("../img/yeah.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 input {

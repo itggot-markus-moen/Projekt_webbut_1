@@ -1,7 +1,7 @@
+body {
+  margin: 0; }
+
 .grid {
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
   width: 360px;
   height: 598px;
   display: grid;
@@ -88,14 +88,13 @@ button {
   border-left-color: #e57200;
   border-right-color: #e57200;
   border-bottom-color: #e57200; }
-
-button:active {
-  color: #080808;
-  background-color: #e57200;
-  border-top-color: #080808;
-  border-left-color: #080808;
-  border-right-color: #080808;
-  border-bottom-color: #080808; }
+  button:active {
+    color: #080808;
+    background-color: #e57200;
+    border-top-color: #080808;
+    border-left-color: #080808;
+    border-right-color: #080808;
+    border-bottom-color: #080808; }
 
 a {
   align-self: center;
@@ -107,20 +106,19 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr); }
+  main h1 {
+    grid-column: span 4;
+    grid-row: 2/7;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #080808;
+    text-align: center;
+    align-self: center; }
 
 .background {
   background-image: url("../img/yeah.jpg");
   background-repeat: no-repeat;
   background-position: center center; }
-
-main h1 {
-  grid-column: span 4;
-  grid-row: 2/7;
-  font-size: 30px;
-  font-family: 'Roboto Slab', serif;
-  color: #080808;
-  text-align: center;
-  align-self: center; }
 
 input {
   border-radius: 10px; }

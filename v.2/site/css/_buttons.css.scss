@@ -16,15 +16,15 @@ button {
     border-left-color: #e57200;
     border-right-color: #e57200;
     border-bottom-color: #e57200;
-}
 
-button:active {
-    color: #080808;
-    background-color: #e57200;
-    border-top-color: #080808;
-    border-left-color: #080808;
-    border-right-color: #080808;
-    border-bottom-color: #080808;
+    &:active{
+        color: #080808;
+        background-color: #e57200;
+        border-top-color: #080808;
+        border-left-color: #080808;
+        border-right-color: #080808;
+        border-bottom-color: #080808;
+    }
 }
 
 a {

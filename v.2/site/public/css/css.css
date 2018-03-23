@@ -189,8 +189,9 @@ h2 {
   text-align: center; }
 
 .map {
-  height: 260px;
+  height: 250px;
   width: 340px;
+  margin-top: 10px;
   margin-left: 10px;
   grid-column: 1/9;
   grid-row: 1/8;

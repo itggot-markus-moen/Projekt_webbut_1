@@ -11,16 +11,6 @@ body {
   margin-right: auto;
   background-color: #282828; }
 
-@media screen and (min-device-width: 361px) {
-  .grid {
-    width: 100vw;
-    height: 166vw; }
-
-  main.wide img {
-    width: 75vw; }
-  main.wide .map {
-    width: 94vw;
-    height: 42vh; } }
 header {
   grid-column: span 4;
   grid-row: span 2;
@@ -178,6 +168,10 @@ h3 {
   grid-column: 2/6;
   grid-row: 8/9;
   font-family: 'Roboto Slab', serif; }
+
+main.wide button {
+  grid-column: 6/8;
+  grid-row: 8/9; }
 
 h4 {
   color: #e57200;

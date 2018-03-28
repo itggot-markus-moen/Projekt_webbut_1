@@ -12,3 +12,21 @@ body {
     margin-right: auto;
     background-color: #282828;
 }
+
+@media screen and (min-device-width: 361px) {
+    .grid {
+        width: 100vw;
+        height: 166vw;
+    }
+
+    main.wide {
+        img {
+            width: 75vw;
+        }
+
+        .map {
+            width: 94vw;
+            height: 42vh;
+        }
+    }
+}
